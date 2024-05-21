@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klub trudnica Beba Eva</title>
+    <meta name="title" content="Klub trudnica Beba Eva" />
+    <meta
+      name="description"
+      content="Trudnoća, porod, dojenje, njega djeteta su naša svakodnevnica. Tu smo za sva vaša pitanja. Prođite kroz trudnoću, porod, i dojenje bez straha"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="assets/images/logo.png"
+        alt="Klub trudnica Beba Eva logo"
+        width="300"
+      />
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="birth-course.html">Tečaj trudnoće</a></li>
+          <li><a href="breast-feeding.html">Tečaj dojenja</a></li>
+          <li><a href="about.html">O nama</a></li>
+        </ul>
+        <img
+          class="burger-menu"
+          src="assets/icons/burger-menu.svg"
+          alt="burger-menu icon"
+          height="40"
+          onclick="showMobileNavigation()"
+        />
+      </nav>
+    </header>
+    <div class="hero-section">
+      <div class="heading-container">
+        <h1>Tečajevi za trudnice</h1>
+        <h2>Učimo vas svemu što trebate znati o zdravlju vaše bebe</h2>
+      </div>
+      <div class="heading-buttons">
+        <a href="#contact-section"
+          ><button class="contact-button">Kontaktiraj nas</button></a
+        >
+        <a href="#course-section"
+          ><button class="explore-course-button">Istraži tečajeve</button></a
+        >
+      </div>
+    </div>
+    <main>
+      <h1 class="main-heading">
+        Brinete o <b>zdravlju</b> vašeg budučeg djeteta i zato ste ovdje? Bez
+        brige, tu smo <b>za vas</b> kako bi vam pomogli da vaš porod prođe
+        <b>prirodno</b> i <b>bezbolno.</b>
+      </h1>
+      <section>
+        <h1 class="section-heading">Što vam nudimo?</h1>
+        <div class="offer-container">
+          <img
+            src="assets/icons/mother.svg"
+            alt="pregnant mother"
+            height="355"
+          />
+          <p>
+            Tečajevi Kluba trudnica Beba Eva uče vas o trudnoči, prirodnom
+            porodu, dojenju i njezi djeteta. Pripremamo vas na sve što dolazi
+            prije i poslije poroda kako bi se pobrinili da majka i djete imaju
+            što lakši i bezbolniji porod te da djete dobije isključivo najbolju
+            njegu kako bi mu omogučili zdrav i siguran razvoj.
+          </p>
+        </div>
+        <div id="course-section"></div>
+        <div class="statistics-container">
+          <div class="statistic">
+            <h3>20+</h3>
+            <p>Godina rada</p>
+          </div>
+          <div class="statistic">
+            <h3>8.500+</h3>
+            <p>Trudnica</p>
+          </div>
+          <div class="statistic">
+            <h3>20.000+</h3>
+            <p>Beba</p>
+          </div>
+          <div class="statistic-info">
+            <h3>Razbijamo strah od poroda</h3>
+          </div>
+        </div>
+        <h1 class="section-heading courses-heading">Naši tečajevi</h1>
+        <div class="statistics-images">
+          <div class="birth-course-container">
+            <div class="birth-course">
+              <h3>Tečaj poroda</h3>
+              <p>Naučite sve o trudnoći i pravilnom porodu</p>
+            </div>
+            <div class="birth-course-container-hovered">
+              <h3>Tečaj poroda</h3>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img src="assets/icons/baby.svg" width="25" alt="baby icon" />
+                </div>
+                <p>Zdravlje vaše bebe</p>
+              </div>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img
+                    src="assets/icons/hands.svg"
+                    width="25"
+                    alt="hands icon"
+                  />
+                </div>
+                <p>Podrška roditeljima</p>
+              </div>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img
+                    src="assets/icons/family.svg"
+                    width="25"
+                    alt="hands icon"
+                  />
+                </div>
+                <p>Prirodan i bezbolan porod</p>
+              </div>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img
+                    src="assets/icons/brown-books.webp"
+                    width="25"
+                    alt="hands icon"
+                  />
+                </div>
+                <p>Porod bez straha</p>
+              </div>
+              <a href="birth-course.html">
+                <button class="course-learn-more-button">saznaj više</button></a
+              >
+            </div>
+          </div>
+          <div class="breast-feeding-course">
+            <div class="breast-feeding">
+              <h3>Tečaj dojenja</h3>
+              <p>Naučite pravilno dojiti</p>
+            </div>
+            <div class="birth-course-container-hovered">
+              <h3>Tečaj poroda</h3>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img src="assets/icons/baby.svg" width="25" alt="baby icon" />
+                </div>
+                <p>Zdravlje vaše bebe</p>
+              </div>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img
+                    src="assets/icons/hands.svg"
+                    width="25"
+                    alt="hands icon"
+                  />
+                </div>
+                <p>Podrška roditeljima</p>
+              </div>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img
+                    src="assets/icons/family.svg"
+                    width="25"
+                    alt="hands icon"
+                  />
+                </div>
+                <p>Prirodan i bezbolan porod</p>
+              </div>
+              <div class="course-info">
+                <div class="course-icon-container">
+                  <img
+                    src="assets/icons/brown-books.webp"
+                    width="25"
+                    alt="hands icon"
+                  />
+                </div>
+                <p>Porod bez straha</p>
+              </div>
+              <a href="birth-course.html">
+                <button class="course-learn-more-button">saznaj više</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="second-offer-container">
+          <img
+            src="assets/icons/baby-hand.svg"
+            alt="pregnant mother"
+            height="208"
+          />
+          <p>
+            Tečajevi Kluba trudnica Beba Eva uče vas o trudnoči, prirodnom
+            porodu, dojenju i njezi djeteta. Pripremamo vas na sve što dolazi
+            prije i poslije poroda kako bi se pobrinili da majka i djete imaju
+            što lakši i bezbolniji porod te da djete dobije isključivo najbolju
+            njegu kako bi mu omogučili zdrav i siguran razvoj.
+          </p>
+        </div>
+      </section>
+      <!-- <section>
+        <h1 class="section-heading">Iskustva naših mama</h1>
+        <div class="reviews-container">
+          <div class="review-container">
+            <div class="review-quote"></div>
+            <p>
+              "Izvrsno objašnjeno i slikovito prikazano. Obuhvačene su stvari
+              važne budućoj majci. Voditeljica ima jako topao i privržen odnos
+              prema majci i bebi. Jako sam sretna i ispunjena zadovoljstvom
+              nakon prisustvovanja ovom tečaju. Nadam se da ću dobro odraditi i
+              svoj porod. isustvovanja ovom tečaju. Nadam se da ću dobro
+              odraditi i svoj porod. isustvovanja ovom tečaju. Nadam se da ću
+              dobro odraditi i svoj porod"
+            </p>
+            <hr />
+            <div class="review-user">
+              <img src="assets/images/Bosiljka.webp" height="50" width="50" />
+              <h3>Danka Partizanka</h3>
+            </div>
+          </div>
+          <div class="review-container">
+            <div class="review-quote"></div>
+            <p>
+              "Izvrsno objašnjeno i slikovito prikazano. Obuhvačene su stvari
+              važne budućoj majci. Voditeljica ima jako topao i privržen odnos
+              prema majci i bebi. Jako sam sretna i ispunjena zadovoljstvom
+              nakon prisustvovanja ovom tečaju. Nadam se da ću dobro odraditi i
+              svoj porod."
+            </p>
+            <hr />
+            <div class="review-user">
+              <img src="assets/images/Bosiljka.webp" height="50" width="50" />
+              <h3>Danka Partizanka</h3>
+            </div>
+          </div>
+          <div class="review-container">
+            <div class="review-quote"></div>
+            <p>
+              "Izvrsno objašnjeno i slikovito prikazano. Obuhvačene su stvari
+              važne budućoj majci. Voditeljica ima jako topao i privržen odnos
+              prema majci i bebi. Jako sam sretna i ispunjena zadovoljstvom
+              nakon prisustvovanja ovom tečaju. Nadam se da ću dobro odraditi i
+              svoj porod."
+            </p>
+            <hr />
+            <div class="review-user">
+              <img src="assets/images/Bosiljka.webp" height="50" width="50" />
+              <h3>Danka Partizanka</h3>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section>
+        <h1 class="section-heading">O nama</h1>
+        <div class="about-section">
+          <div class="about-image">
+            <div class="about-image-heading"><h3>Bosiljka Bulović</h3></div>
+          </div>
+          <div class="about-text">
+            <p class="about-text-heading">
+              <b>Naša misija</b> je prenjeti naše znanje i iskustvo budučim
+              roditeljima kako bi svaka beba na ovaj svjet došla što sigurnije.
+            </p>
+            <p class="about-text-description">
+              Bosiljka Bulović, naša osnivačica, ujedno i najpoznatija Hrvatska
+              babica, posvetila je svoj život pružanju podrške trudnicama i
+              brizi o njihovoj djeci na najbolji mogući način...
+            </p>
+            <a href="about.html"
+              ><button class="learn-more-button">Saznaj više</button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="contact-section">
+        <h1 class="section-heading">Pronađite nas</h1>
+        <a href="mailto:klub@beba-eva.hr">
+          <div class="contact-image">
+            <div class="contact-info">
+              <h3>Tu smo za sva vaša pitanja</h3>
+              <h4>Obratite nam se</h4>
+            </div>
+            <div class="contact-info-email"><p>klub@beba-eva.hr</p></div>
+          </div>
+        </a>
+        <div class="contact-details-container">
+          <h2 class="contact-details-heading">
+            Klub trudnica <span>BEBA EVA</span>
+          </h2>
+          <div class="contact-details">
+            <h3>Adresa</h3>
+            <p>Udruga za trudnice Klub trudnica Beba Eva</p>
+            <p>Karamanova 1, 21000 Split</p>
+          </div>
+          <div class="contact-details">
+            <h3>Kontakt</h3>
+            <p>klub@beba-eva.hr</p>
+            <p>+385 91 131 4414</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

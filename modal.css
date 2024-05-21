@@ -1,0 +1,57 @@
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.overlay {
+  background-color: #00000080;
+}
+
+.modal-content {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 30px 42px;
+  border-radius: 3px;
+  max-width: 90vw;
+  min-width: 300px;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 800px) {
+  .modal-content {
+    top: 45%;
+    width: 100%;
+  }
+}
