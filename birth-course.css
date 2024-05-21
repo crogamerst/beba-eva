@@ -20,7 +20,7 @@ main {
   background-image: url(assets/images/mom-background.webp);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain;
+    background-attachment: scroll;
 }
 
 .main-section h1 {
