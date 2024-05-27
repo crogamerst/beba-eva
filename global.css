@@ -91,19 +91,14 @@ header ul {
   display: none;
 }
 
-.navigation {
-  display: none;
-  transition: display 0.5s linear;
-}
-
 .navigation-show {
   visibility: visible;
   opacity: 1;
-  display: block;
+  display: flex !important;
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 0;
-  background-color: var(--ternary-color);
+  background-color: var(--background-color);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -111,6 +106,7 @@ header ul {
   gap: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -119,14 +115,16 @@ header ul {
     max-height: 300px;
   }
 
-  .navigation {
-  }
-
   .header {
     padding-inline: 16px !important;
+    height: 60px !important;
   }
 
   .burger-menu {
     display: block;
+  }
+
+  .navigation {
+    display: none;
   }
 }

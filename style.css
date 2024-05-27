@@ -6,6 +6,10 @@ main {
   padding: 80px 160px 0 160px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .courses-heading {
   display: none;
 }
@@ -184,7 +188,7 @@ section {
 }
 
 .birth-course-container,
-.breast-feeding-course {
+.breast-feeding-container {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
   width: 510px;
@@ -201,7 +205,7 @@ section {
   background-image: url(assets/images/trudnica.webp);
 }
 
-.breast-feeding-course {
+.breast-feeding-container {
   background-image: url(assets/images/uspavljivanje.webp);
 }
 
@@ -231,9 +235,9 @@ section {
 } */
 
 .birth-course-container-hovered {
+  justify-content: end;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -243,7 +247,7 @@ section {
   right: 0;
   bottom: 0;
   background-color: #52423cbe;
-  transition: all 0.5s ease-in-out;
+  transition: all 500ms ease-in;
 }
 
 .birth-course-container-hovered h3 {
@@ -296,7 +300,7 @@ section {
 }
 
 .birth-course h3,
-.breast-feeding-course h3 {
+.breast-feeding-container h3 {
   font-family: 'Montserrat-Arabic SemiBold';
   font-size: 36.1px;
   letter-spacing: -39;
@@ -306,7 +310,7 @@ section {
 }
 
 .birth-course p,
-.breast-feeding-course p {
+.breast-feeding-container p {
   font-family: 'Montserrat-Arabic Regular';
   letter-spacing: -39;
   line-height: 0.93;
@@ -586,14 +590,27 @@ section {
 
 @media only screen and (max-width: 768px) {
   body {
-    padding-top: 80px;
+    padding-top: 60px;
+  }
+
+  .logo {
+    max-width: 200px;
+    max-height: 300px;
+  }
+
+  .header {
+    padding-inline: 16px !important;
   }
 
   main {
     padding: 0 20px;
   }
 
-  .breast-feeding-course,
+  .burger-menu {
+    display: block;
+  }
+
+  .breast-feeding-container,
   .birth-course-container {
     background-position-x: center;
   }
@@ -744,7 +761,7 @@ section {
   }
 
   .birth-course-container,
-  .breast-feeding-course {
+  .breast-feeding-container {
     width: 100%;
   }
 
@@ -822,7 +839,7 @@ section {
     font-size: 12px;
   }
 
-  /* .contact-image:hover > .contact-info {
+  .contact-image:hover > .contact-info {
     transition: all 0.5s ease-in;
     margin-left: 0;
     transform: scale(0.9);
@@ -832,7 +849,7 @@ section {
     transition: all 0.5s ease-in;
     color: var(--ternary-color);
     transform: scale(1.2) translateX(20px);
-  } */
+  }
 
   .contact-info-email {
     height: 35%;
