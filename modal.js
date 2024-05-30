@@ -37,7 +37,6 @@ const openModal = () => {
 
   $('body').append(modalElement);
   $('body').css('overflow', 'hidden');
-  $('header').removeClass('nav-down').addClass('nav-up');
 };
 
 const closeModal = () => {

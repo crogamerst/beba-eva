@@ -382,6 +382,7 @@ main::after {
   }
 
   .login-bottom-container {
+    height: 843px;
     margin-top: 10px;
     flex-direction: column;
   }
@@ -392,7 +393,7 @@ main::after {
   }
   .login-action-wrapper {
     position: relative;
-    top: -180px;
+    top: 0;
     width: 100%;
   }
 
