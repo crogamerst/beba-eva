@@ -382,7 +382,6 @@ main::after {
   }
 
   .login-bottom-container {
-    height: 843px;
     margin-top: 10px;
     flex-direction: column;
   }
@@ -393,7 +392,6 @@ main::after {
   }
   .login-action-wrapper {
     position: relative;
-    top: 0;
     width: 100%;
   }
 
@@ -420,8 +418,9 @@ main::after {
   }
 
   .login-action-wrapper {
-    background-size: 50%;
-    background-position: 100% 70%;
+    background: none;
+    height: auto;
+    margin-top: 40px;
   }
 
   .gift {
