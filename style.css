@@ -79,7 +79,7 @@ main {
   text-transform: uppercase;
   font-size: 19.2px;
   border-radius: 15px;
-  transition: all 200ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 .main-heading {
@@ -211,7 +211,7 @@ section {
 
 .birth-course {
   visibility: visible;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 1s, opacity 1s linear;
 }
 
 /* .birth-course-container:hover > .birth-course {
@@ -247,8 +247,8 @@ section {
   right: 0;
   bottom: 0;
   background-color: #52423cbe;
-  transition: all 500ms ease-in;
-  transition-delay: 500ms;
+  transition: all 1s ease-in;
+  transition-delay: 1s;
 }
 
 .birth-course-container-hovered h3 {
