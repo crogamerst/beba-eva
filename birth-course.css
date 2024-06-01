@@ -395,9 +395,13 @@ main::after {
     width: 100%;
   }
 
+  .login-action {
+    align-items: flex-end;
+  }
+
   .login-action h2 {
     font-size: 24px;
-    width: 100%;
+    width: min-content;
   }
   .login-action h3 {
     font-size: 18px;

@@ -248,6 +248,7 @@ section {
   bottom: 0;
   background-color: #52423cbe;
   transition: all 500ms ease-in;
+  transition-delay: 500ms;
 }
 
 .birth-course-container-hovered h3 {
@@ -588,6 +589,19 @@ section {
   }
 }
 
+@media only screen and (max-width: 880px) {
+  .statistic-info {
+    display: none;
+  }
+
+  .statistics-images {
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body {
     padding-top: 60px;
@@ -622,13 +636,6 @@ section {
   .statistics-container {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .statistics-images {
-    padding: 0 10px;
-    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -861,10 +868,6 @@ section {
     padding-top: 20px;
   }
 
-  .statistic-info {
-    display: none;
-  }
-
   .about-section {
     margin-top: 25px;
     margin-inline: 0;
@@ -879,6 +882,8 @@ section {
   }
 
   .contact-details-heading {
+    font-family: 'Montserrat-Arabic Regular';
+
     font-size: 20px;
   }
 
