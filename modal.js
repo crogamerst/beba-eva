@@ -37,9 +37,11 @@ const openModal = () => {
 
   $('body').append(modalElement);
   $('body').css('overflow', 'hidden');
+  $('.header').css('display', 'none');
 };
 
 const closeModal = () => {
   $('.modal').remove();
   $('body').css('overflow', 'auto');
+  $('.header').css('display', 'flex');
 };

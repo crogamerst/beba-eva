@@ -91,24 +91,6 @@ header ul {
   display: none;
 }
 
-.navigation-show {
-  visibility: visible;
-  opacity: 1;
-  display: flex !important;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  background-color: var(--background-color);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--primary-color);
-}
-
 footer {
   margin-top: 20px;
   display: flex;
@@ -145,7 +127,22 @@ footer {
   }
 
   .navigation {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex !important;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--primary-color);
+    transition: all 0.5s ease;
   }
 
   .copyright {

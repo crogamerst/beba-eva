@@ -1,9 +1,11 @@
-const showMobileNavigation = () => {
-  const isOpen = $('.navigation').hasClass('navigation-show');
+let isOpen = false;
 
+const showMobileNavigation = () => {
   if (isOpen) {
-    $('.navigation').removeClass('navigation-show');
+    $('.navigation').css({ opacity: 0, visibility: 'hidden' });
   } else {
-    $('.navigation').addClass('navigation-show');
+    $('.navigation').css({ opacity: 1, visibility: 'visible' });
   }
+
+  isOpen = !isOpen;
 };

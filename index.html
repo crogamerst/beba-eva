@@ -16,12 +16,14 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="logo"
-        src="assets/images/logo.png"
-        alt="Klub trudnica Beba Eva logo"
-        width="300"
-      />
+      <a href="index.html">
+        <img
+          class="logo"
+          src="assets/images/logo.png"
+          alt="Klub trudnica Beba Eva logo"
+          width="300"
+        />
+      </a>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Početna</a></li>
@@ -47,12 +49,12 @@
         </h2>
       </div>
       <div class="heading-buttons">
-        <a href="#contact-section"
-          ><button class="contact-button">Kontaktiraj nas</button></a
-        >
-        <a href="#course-section"
-          ><button class="explore-course-button">Istraži tečajeve</button></a
-        >
+        <button class="contact-button" onclick="scrollToContact()">
+          Kontaktiraj nas
+        </button>
+        <button class="explore-course-button" onclick="scrollToCourses()">
+          Istraži tečajeve
+        </button>
       </div>
     </div>
     <main>
@@ -77,7 +79,6 @@
             njegu kako bi mu omogućili zdrav i siguran razvoj.
           </p>
         </div>
-        <div id="course-section"></div>
         <div class="statistics-container">
           <div class="statistic">
             <h3 class="statistic-number">20+</h3>
@@ -95,7 +96,7 @@
             <h3>Razbijamo strah od poroda</h3>
           </div>
         </div>
-        <div id="course-section">
+        <div>
           <h1 class="section-heading courses-heading">Naši tečajevi</h1>
           <div class="statistics-images">
             <div class="birth-course-container">
@@ -157,7 +158,7 @@
                 <h3>Tečaj dojenja</h3>
                 <p>Naučite sve o pravilnom dojenju i njezi nakon poroda</p>
               </div>
-              <div class="birth-course-container-hovered">
+              <div class="breast-feeding-container-hovered">
                 <h3>Tečaj dojenja</h3>
                 <div class="course-info">
                   <div class="course-icon-container">
@@ -210,17 +211,18 @@
         </div>
 
         <div class="second-offer-container">
-          <img
+          <!-- <img
             src="assets/icons/baby-hand.svg"
             alt="pregnant mother"
             height="208"
-          />
+          /> -->
           <p>
-            Tečajevi Kluba trudnica Beba Eva uče vas o trudnoči, prirodnom
-            porodu, dojenju i njezi djeteta. Pripremamo vas na sve što dolazi
-            prije i poslije poroda kako bi se pobrinili da majka i djete imaju
-            što lakši i bezbolniji porod te da djete dobije isključivo najbolju
-            njegu kako bi mu omogučili zdrav i siguran razvoj.
+            Mnoge majke koje su nam se obratile su bile zabrinute pa čak i
+            prepadnute zbog manjka informacija i priča koje kruže iz rodilišta,
+            stoga smo odlučili stati tome na kraj. Uz našu edukaciju i podršku
+            nema razloga za strah. Za sve što vas brine bit ćemo tu za vas i
+            podržati vas kroz cijelo ovo putovanje kako bi i vi imali bezbrižno
+            i sretno iskustvo.
           </p>
         </div>
       </section>
@@ -288,9 +290,9 @@
               roditeljima kako bi svaka beba na ovaj svjet došla što sigurnije.
             </p>
             <p class="about-text-description">
-              Bosiljka Bulović, naša osnivačica, ujedno i najpoznatija Hrvatska
-              babica, posvetila je svoj život pružanju podrške trudnicama i
-              brizi o njihovoj djeci na najbolji mogući način...
+              <b>Bosiljka Bulović,</b> naša osnivačica, ujedno i najpoznatija
+              Hrvatska babica, posvetila je svoj život pružanju podrške
+              trudnicama i brizi o njihovoj djeci na najbolji mogući način...
             </p>
             <a href="about.html"
               ><button class="learn-more-button">Saznaj više</button></a
@@ -311,7 +313,7 @@
         </a>
         <div class="contact-details-container">
           <h2 class="contact-details-heading">
-            Klub trudnica <span>BEBA EVA</span>
+            Klub trudnica <span>Beba EVA</span>
           </h2>
           <div class="contact-details">
             <h3>Adresa</h3>
@@ -361,6 +363,7 @@
         </a>
       </div>
       <p class="copyright">Copyright © 2024 Beba Eva, All rights reserved</p>
+      <a href="privacy-policy.html"><p class="copyright">Privacy policy</p></a>
     </footer>
   </body>
 </html>
